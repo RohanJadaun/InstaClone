@@ -1,0 +1,103 @@
+.post-card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-shadow:
+    0 4px 12px
+    rgba(0, 0, 0, 0.08);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.post-user-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #262626;
+}
+
+.post-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 18px;
+  font-size: 24px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.action-icon {
+  cursor: pointer;
+}
+
+.likes-count {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.post-caption {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.comments-section {
+  border-top: 1px solid #efefef;
+  padding-top: 10px;
+}
+
+.comment-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.comment-delete {
+  background: transparent;
+  color: #ff4d4f;
+  border: none;
+}
+
+.add-comment {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.comment-input {
+  flex: 1;
+}
+
+.delete-post-btn {
+  margin-top: 15px;
+  background: #ff4d4f;
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}

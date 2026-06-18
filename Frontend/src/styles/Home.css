@@ -1,0 +1,59 @@
+.home-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  gap: 40px;
+}
+
+.feed-section {
+  flex: 2;
+}
+
+.suggested-section {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  height: fit-content;
+  box-shadow:
+    0 2px 10px
+    rgba(0,0,0,0.08);
+  position: sticky;
+  top: 90px;
+}
+
+.suggested-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.suggested-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .suggested-section {
+    position: static;
+  }
+}
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .suggested-section {
+    position: static;
+    width: 100%;
+  }
+}
